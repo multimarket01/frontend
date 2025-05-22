@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npx ng build",
+    "build": "npx ng build --configuration=production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng build --watch & ng run multikart-frontend:server --watch & nodemon dist/multikart-frontend/server/server.mjs",
@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.0.5",
-    "@angular/cli": "^19.0.5",
+    "@angular/cli": "^19.2.13",
     "@angular/compiler-cli": "^19.0.4",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
